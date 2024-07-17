@@ -1,0 +1,4 @@
+"Test Suite","Test Case","Test Step","Step Type","Step Status","Result message","Execution Date"
+"TestSuite","TestCase2","Add","request","OK","","17-Jul-2024 23_42",
+"TestSuite","TestCase2","Groovy Script","groovy","OK","","17-Jul-2024 23_42",
+"TestSuite","TestCase2","Subtract","request","OK","","17-Jul-2024 23_42",
