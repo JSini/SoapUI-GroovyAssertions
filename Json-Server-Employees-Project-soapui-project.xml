@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="cc8f5be6-11d8-4afa-acb6-ca2296c0505b" activeEnvironment="Default" name="Json-Server-Employees-Project" soapui-version="5.7.2" abortOnError="false" runType="SEQUENTIAL" resourceRoot="" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:interface xsi:type="con:RestService" id="c5741d19-c39c-4f49-9c05-5bc8fc701007" wadlVersion="http://wadl.dev.java.net/2009/02" name="http://localhost:3000" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart=""/><con:endpoints><con:endpoint>http://localhost:3000</con:endpoint></con:endpoints><con:resource name="PostUser" path="/employees" id="4425e65d-c4c4-4d8b-a017-0bb91fea1520"><con:settings/><con:parameters/><con:method name="PostUser" id="fae52a3c-07db-42e7-aeaa-e9fc8f4d6fd1" method="POST"><con:settings/><con:parameters/><con:representation type="RESPONSE"><con:mediaType>application/json</con:mediaType><con:status>200 201</con:status><con:params/><con:element>Response</con:element></con:representation><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>500</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>500</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>500</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>500</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>500</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>500</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>500</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>500</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>500</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>500</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>500</con:status><con:params/><con:element>data</con:element></con:representation><con:request name="CreateEmployee" id="14bd14ff-5efa-4ac5-a424-e0abff8f4c14" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://localhost:3000</con:endpoint><con:request/><con:originalUri>http://localhost/employees</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/><con:parameterOrder><con:entry/></con:parameterOrder></con:request></con:method></con:resource></con:interface><con:interface xsi:type="con:RestService" id="c3701021-4f12-4823-a402-0a42c9e2535f" wadlVersion="http://wadl.dev.java.net/2009/02" name="http://localhost:3000" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart=""/><con:endpoints><con:endpoint>http://localhost:3000</con:endpoint></con:endpoints><con:resource name="GetAllUsers" path="/employees" id="1491bfcd-6d79-485d-8b79-116450dfeda5"><con:settings/><con:parameters/><con:method name="GetUsers" id="94ea4f93-8049-423e-83c3-9b837aa1fab0" method="GET"><con:settings/><con:parameters/><con:representation type="RESPONSE"><con:mediaType>application/json</con:mediaType><con:status>200</con:status><con:params/><con:element>Response</con:element></con:representation><con:request name="GetEmployees" id="ef00f45c-77fd-4a2b-aa27-c82db37db6e9" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://localhost:3000</con:endpoint><con:request/><con:originalUri>http://localhost/employees</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource></con:interface><con:interface xsi:type="con:RestService" id="64206585-2ea2-4f78-8ce0-ba7e537cb5d1" wadlVersion="http://wadl.dev.java.net/2009/02" name="http://localhost:3000" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart=""/><con:endpoints><con:endpoint>http://localhost:3000</con:endpoint></con:endpoints><con:resource name="Id" path="/employees/{id}" id="ba1dc684-6b5e-4aec-84a9-f5e0d6dcb4e4"><con:settings/><con:parameters><con:parameter><con:name>id</con:name><con:style>TEMPLATE</con:style></con:parameter></con:parameters><con:method name="PutUser" id="afb8e702-5035-4479-a0fb-e3a1a894ca0a" method="PUT"><con:settings/><con:parameters/><con:representation type="RESPONSE"><con:mediaType>application/json</con:mediaType><con:status>200</con:status><con:params/><con:element>Response</con:element></con:representation><con:representation type="FAULT"><con:mediaType>text/plain; charset=utf-8</con:mediaType><con:status>404</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:request name="updateUser" id="a7a18bbd-2f78-406c-a5ba-6e345d9ac1e9" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://localhost:3000</con:endpoint><con:request/><con:originalUri>http://localhost/employees/</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/><con:parameterOrder><con:entry>id</con:entry><con:entry/></con:parameterOrder></con:request></con:method></con:resource></con:interface><con:interface xsi:type="con:RestService" id="7fb6b384-bf11-451a-832b-3a9588bb9b61" wadlVersion="http://wadl.dev.java.net/2009/02" name="http://localhost:3000" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart=""/><con:endpoints><con:endpoint>http://localhost:3000</con:endpoint></con:endpoints><con:resource name="Id" path="/employees/{id}" id="af458453-643d-44b1-a7ad-82b9cbc180dc"><con:settings/><con:parameters><con:parameter><con:name>id</con:name><con:style>TEMPLATE</con:style></con:parameter></con:parameters><con:method name="DeleteUser" id="a7abd1d6-dcb8-407f-b322-b02417e54347" method="DELETE"><con:settings/><con:parameters/><con:representation type="FAULT"><con:mediaType>text/plain; charset=utf-8</con:mediaType><con:status>404</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:emp="http://localhost/employees/">emp:Response</con:element></con:representation><con:request name="delUser" id="f4fdb02f-b716-4115-a2d7-e971b413389a" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://localhost:3000</con:endpoint><con:request/><con:originalUri>http://localhost/employees/</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/><con:parameterOrder><con:entry>id</con:entry></con:parameterOrder></con:request></con:method></con:resource></con:interface><con:testSuite id="6b0fbfed-1a02-42d2-888e-9660910ce072" name="SanitySuite"><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase id="03c6fbd4-0c37-4a6b-a749-ceeaf572227c" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="employees_e2e_test" searchProperties="true"><con:settings/><con:testStep type="restrequest" name="GetUsers" id="f5df1fa3-27e8-41f0-b97a-53c4e8a58d58"><con:settings/><con:config service="http://localhost:3000" resourcePath="/employees" methodName="GetUsers" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="GetUsers" id="ef00f45c-77fd-4a2b-aa27-c82db37db6e9" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://localhost:3000</con:endpoint><con:request/><con:originalUri>http://localhost/employees</con:originalUri><con:assertion type="Simple Contains" id="dbca9eb6-ee7b-4e76-ae22-c3098c3354aa" name="Contains"><con:configuration><token>email</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Response SLA Assertion" id="4e1eb294-e4db-4de1-b8a7-91961fa0403d" name="Response SLA"><con:configuration><SLA>200</SLA></con:configuration></con:assertion><con:assertion type="Valid HTTP Status Codes" id="a547af52-6cd6-4326-ad58-cc0fc6b3ff42" name="Valid HTTP Status Codes"><con:configuration><codes>200</codes></con:configuration></con:assertion><con:assertion type="Schema Compliance" id="b12c1db6-3615-44ad-8381-d837aa764103" name="Schema Compliance"><con:configuration/></con:assertion><con:assertion type="GroovyScriptAssertion" id="844de26a-e8d9-4d65-a82e-12cd5bc989ef" name="Script Assertion"><con:configuration><scriptText>import groovy.json.JsonSlurper
+
+assert messageExchange.hasResponse() ==true;
+
+assert messageExchange.getTimeTaken() &lt;200;
+//def response = messageExchange.getResponse()
+//log.info response
+def response2 = messageExchange.response.responseContent;
+log.info(response2);
+
+def json = new JsonSlurper().parseText(response2);
+log.info json;</scriptText></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:testStep type="groovy" name="FakerDataScript" id="25e695ad-f7e2-4ccd-882e-887a94eeec29"><con:settings/><con:config><script>import com.github.javafaker.Faker
+
+def faker = new Faker();
+def randId = faker.number().numberBetween(100, 1000);
+def randFname = faker.name().firstName();
+def randLname = faker.name().lastName();
+def randEmail = faker.internet().emailAddress();
+
+//log.info randId
+//log.info randFname
+//log.info randLname
+//log.info randEmail
+
+testRunner.testCase.setPropertyValue("id", randId.toString())
+testRunner.testCase.setPropertyValue("fname", randFname)
+testRunner.testCase.setPropertyValue("lname", randLname)
+testRunner.testCase.setPropertyValue("email", randEmail)
+
+
+</script></con:config></con:testStep><con:testStep type="restrequest" name="CreateEmployee" id="432981e6-9854-4005-ad60-b1f728de8002"><con:settings/><con:config service="http://localhost:3000" resourcePath="/employees" methodName="PostUser" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="CreateEmployee" id="14bd14ff-5efa-4ac5-a424-e0abff8f4c14" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://localhost:3000</con:endpoint><con:request>{
+    "id": "${#TestCase#id}",
+    "firstname": "${#TestCase#fname}",
+    "lastname": "${#TestCase#lname}",
+    "email": "${#TestCase#email}"
+  }
+</con:request><con:originalUri>http://localhost/employees</con:originalUri><con:assertion type="JsonPath Count" id="37c4b4d6-81ae-4b97-a23d-35b979c6fa87" name="JsonPath Count"><con:configuration><path>$</path><content>1</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:assertion type="Schema Compliance" id="6f9cb76a-01af-4cbd-ad14-94b74ecd11bc" name="Schema Compliance"><con:configuration/></con:assertion><con:assertion type="JsonPath Existence Match" id="27240a6f-e8ee-407e-ae59-4e16ca803a89" name="JsonPath Existence Match"><con:configuration><path>$.email</path><content>true</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:assertion type="Valid HTTP Status Codes" id="5bcfee0b-de0d-4680-8b3c-bb03908a9261" name="Valid HTTP Status Codes"><con:configuration><codes>201</codes></con:configuration></con:assertion><con:assertion type="GroovyScriptAssertion" id="514c639a-ed80-4895-80a4-428fd5fe8049" name="Script Assertion"><con:configuration><scriptText>
+
+log.info "hello"
+//assert messageExchange.hasResponse() ==true;
+//assert messageExchange.getTimeTaken() &lt;200;
+
+//validate response
+//def response = messageExchange.getResponse();
+//log.info response;
+def response2 = messageExchange.response.responseContent;
+log.info(response2);
+
+//def json = new JsonSlurper().parseText(response2);
+//log.info json;
+//
+////assert json.firstname !=null ;
+//
+//def actual = json.firstname;
+//def expected = context.expand('${#TestCase#fname}');
+//log.info(actual);
+//log.info(expected);
+//
+//assert actual==expected;
+//
+////Validate header
+//log.info messageExchange.responseHeaders["Connection"];
+//assert messageExchange.responseHeaders["Connection"] == ["keep-alive"];
+//assert messageExchange.responseHeaders["Connection"][0] == "keep-alive";
+</scriptText></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/><con:parameterOrder><con:entry/></con:parameterOrder></con:restRequest></con:config></con:testStep><con:testStep type="transfer" name="IdTransfer2update" id="717c035d-d531-47b2-aa50-28ef911cf7da"><con:settings/><con:config xsi:type="con:PropertyTransfersStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:transfers setNullOnMissingSource="true" transferTextContent="true" failOnError="true" ignoreEmpty="false" transferToAll="false" entitize="false" transferChildNodes="false"><con:name>IdTransfer</con:name><con:sourceType>Response</con:sourceType><con:sourceStep>CreateEmployee</con:sourceStep><con:sourcePath>$.id</con:sourcePath><con:targetType>id</con:targetType><con:targetStep>updateUser</con:targetStep><con:type>JSONPATH</con:type><con:upgraded>true</con:upgraded></con:transfers></con:config></con:testStep><con:testStep type="transfer" name="IdTransfer2del" id="85fd7c0c-53c3-40a8-ad5e-4764f83a6d4a"><con:settings/><con:config xsi:type="con:PropertyTransfersStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:transfers setNullOnMissingSource="true" transferTextContent="true" failOnError="true" ignoreEmpty="false" transferToAll="false" entitize="false" transferChildNodes="false"><con:name>IdTransfer</con:name><con:sourceType>Response</con:sourceType><con:sourceStep>CreateEmployee</con:sourceStep><con:sourcePath>$.id</con:sourcePath><con:targetType>id</con:targetType><con:targetStep>delUser</con:targetStep><con:type>JSONPATH</con:type><con:upgraded>true</con:upgraded></con:transfers></con:config></con:testStep><con:testStep type="groovy" name="ExcelDataInput" id="02a98076-a398-411b-8b81-efc0b3a451ef"><con:settings/><con:config><script>import jxl.*
+import jxl.write.*
+
+//code similar to system.getProperty("user.dir")
+def path = new com.eviware.soapui.support.GroovyUtils(context).projectPath
+//log.info(path)
+log.info testRunner.testCase.name
+//Getting the workbook
+Workbook wb = Workbook.getWorkbook(new File(path + "\\JsonServerEmployeeTCE2E.xls"))
+Sheet sheet1 = wb.getSheet(0)
+
+//get rowcount and colcount for iteration
+def lastrowcount = sheet1.getRows().toInteger();
+def lastcolcount = sheet1.getColumns().toInteger();
+log.info (lastrowcount)
+log.info lastcolcount
+////
+//for (int i =0; i&lt;lastrowcount; i++){
+//	for (int j=0; j&lt;lastcolcount; j++){
+//		if (sheet1.getCell(0,i).getContents().equals("employees_e2e_test")) {
+//			testRunner.testCase.testSuite.setPropertyValue(sheet1.getCell(j,0).getContents(), sheet1.getCell(j,i).getContents())
+//		}
+//	}
+//}
+
+for (int i =0; i&lt;lastrowcount; i++){
+	for (int j=0; j&lt;lastcolcount; j++){
+		if (sheet1.getCell(0,i).getContents().equals(testRunner.testCase.name)) {
+			testRunner.testCase.testSuite.setPropertyValue(sheet1.getCell(j,0).getContents(), sheet1.getCell(j,i).getContents())
+		}
+	}
+}</script></con:config></con:testStep><con:testStep type="restrequest" name="updateUser" id="de123a3e-e267-4d8a-9562-41da90c3b5d0"><con:settings/><con:config service="http://localhost:3000" resourcePath="/employees/{id}" methodName="PutUser" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="updateUser" id="a7a18bbd-2f78-406c-a5ba-6e345d9ac1e9" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://localhost:3000</con:endpoint><con:request>{
+	"firstname":"${#TestSuite#fname}",
+	"lastname":"${#TestSuite#lname}",
+	"email":"${#TestSuite#email}"
+}
+</con:request><con:originalUri>http://localhost/employees/</con:originalUri><con:assertion type="JsonPath Count" id="d0be1ccb-66e6-4ede-a011-5dfdc43c7718" name="JsonPath Count"><con:configuration><path>$</path><content>1</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:assertion type="Simple Contains" id="28fb8bc5-126d-4a35-bd77-4b8fa4fbf098" name="Contains"><con:configuration><token>Mani</token><ignoreCase>true</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Valid HTTP Status Codes" id="410a5fd9-6a5c-41ef-abe2-57e7593ca37e" name="Valid HTTP Status Codes"><con:configuration><codes>200
+</codes></con:configuration></con:assertion><con:assertion type="JsonPath Existence Match" id="f340cf2a-f339-4b0d-b5bd-e92721200485" name="JsonPath Existence Match"><con:configuration><path>$.firstname</path><content>true</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:assertion type="GroovyScriptAssertion" id="581c5f8e-b555-45d5-9a09-3e2e5a828713" name="Script Assertion"><con:configuration><scriptText>import groovy.json.JsonSlurper
+
+//assert messageExchange.hasResponse() ==true
+//
+//assert messageExchange.getTimeTaken() &lt;200;
+//def response = messageExchange.getResponse()
+//log.info response
+def response2 = messageExchange.response.responseContent;
+log.info(response2)
+
+def json = new JsonSlurper().parseText(response2)
+log.info json
+
+
+assert json.lastname =="Mani"</scriptText></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="id" value="134" xmlns="http://eviware.com/soapui/config"/></con:parameters><con:parameterOrder><con:entry>id</con:entry></con:parameterOrder></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="delUser" id="8cddafdd-c2c9-4e44-97e2-9b0511e65140"><con:settings/><con:config service="http://localhost:3000" resourcePath="/employees/{id}" methodName="DeleteUser" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="delUser" id="f4fdb02f-b716-4115-a2d7-e971b413389a" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://localhost:3000</con:endpoint><con:request/><con:originalUri>http://localhost/employees/</con:originalUri><con:assertion type="Schema Compliance" id="a882d4fb-6c7e-4ff8-959a-85ca148b7dd1" name="Schema Compliance"><con:configuration/></con:assertion><con:assertion type="Valid HTTP Status Codes" id="c499d9a9-40ea-4b0d-be7e-18466e007b80" name="Valid HTTP Status Codes"><con:configuration><codes>200</codes></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="id" value="134" xmlns="http://eviware.com/soapui/config"/></con:parameters><con:parameterOrder><con:entry>id</con:entry></con:parameterOrder></con:restRequest></con:config></con:testStep><con:setupScript>log.info "Starting the test"</con:setupScript><con:tearDownScript>//ExtentTest test = context.report.createTest("Test1")
+//test.pass("passed")
+
+//instead of cretaing test in each test case, write a script under Library suite, for that
+
+testRunner.testCase.testSuite.project.testSuites["Library"].testCases["Reporting_Utility"].
+testSteps["GenerateHTMLReport"].run(testRunner, context);</con:tearDownScript><con:properties><con:property><con:name>id</con:name><con:value>134</con:value></con:property><con:property><con:name>fname</con:name><con:value>Gordon</con:value></con:property><con:property><con:name>lname</con:name><con:value>Blick</con:value></con:property><con:property><con:name>email</con:name><con:value>coy.kerluke@gmail.com</con:value></con:property><con:property><con:name>author</con:name><con:value>sij</con:value></con:property><con:property><con:name>category</con:name><con:value>sanity</con:value></con:property></con:properties></con:testCase><con:properties><con:property><con:name>TestCase</con:name><con:value>employees_e2e_test</con:value></con:property><con:property><con:name>fname</con:name><con:value>Justin</con:value></con:property><con:property><con:name>lname</con:name><con:value>Cyber</con:value></con:property><con:property><con:name>email</con:name><con:value>cyber@hotmail.com</con:value></con:property></con:properties><con:setupScript>import com.aventstack.extentreports.ExtentReports;
+import com.aventstack.extentreports.reporter.ExtentSparkReporter;
+import com.aventstack.extentreports.reporter.configuration.Theme;
+
+ExtentReports reports= new ExtentReports();
+ExtentSparkReporter spark = new ExtentSparkReporter("C:\\Jp\\youtube\\SoapUI");
+spark.config().setTheme(Theme.DARK);
+spark.config().setDocumentTitle("Automation Report");
+spark.config().setReportName("SoapUIReport");
+reports.attachReporter(spark);
+context.report = reports;</con:setupScript><con:tearDownScript>context.report.flush();</con:tearDownScript></con:testSuite><con:testSuite id="87ce668e-7604-483b-a358-a5b360fe609c" name="Library" disabled="true"><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase id="d0088fcb-4f5d-4c1b-af29-9d8dbf7cf737" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="Reporting_Utility" searchProperties="true"><con:settings/><con:testStep type="groovy" name="GenerateHTMLReport" id="b853df96-bcf1-40f6-a99c-7e2eb11faa9f"><con:settings/><con:config><script>import com.aventstack.extentreports.markuputils.CodeLanguage;
+import com.aventstack.extentreports.markuputils.MarkupHelper;
+import com.aventstack.extentreports.markuputils.ExtentColor;
+import com.aventstack.extentreports.markuputils.*
+try {
+def testCase = testRunner.testCase.name;
+def testnode = context.report.createTest(testCase);
+def testAuthor = testRunner.testCase.getPropertyValue("author");
+def testCategory = testRunner.testCase.getPropertyValue("category");
+
+
+testnode.assignAuthor(testAuthor);
+testnode.assignCategory(testCategory);
+  for(stepResult in testRunner.getResults())
+  {
+   def testSuite = testRunner.testCase.testSuite.name;
+   def testStep = stepResult.getTestStep();
+   def testStepName = testStep.name
+   def type = testStep.config.type
+   def status = stepResult.getStatus()
+  
+   if(status.toString().equalsIgnoreCase("OK")){
+   	testnode.pass(testStepName+" is passed");
+   }
+   if(status.toString().equalsIgnoreCase("Failed")){
+   	testnode.fail(MarkupHelper.createLabel(testStepName+" is failed", ExtentColor.RED));
+   	for(resMessage in stepResult.getMessages())
+   {
+     testnode.fail(MarkupHelper.createLabel(resMessage, ExtentColor.RED));
+   }
+   }
+  
+    if(type=="request")
+        {
+       def extRequest = testStep.getProperty("RawRequest").getValue();  
+       def extResponse = stepResult.getResponseContent(); 
+       testnode.info("---------Request-------------");   
+	  testnode.info(MarkupHelper.createCodeBlock(extRequest, CodeLanguage.XML));
+	  testnode.info("---------Response-------------");   
+	  testnode.info(MarkupHelper.createCodeBlock(extResponse, CodeLanguage.XML));
+        }
+    if(type=="restrequest"){
+    	  def extRequest = testStep.getProperty("RawRequest").getValue();  
+       def extResponse = stepResult.getResponseContent(); 
+    
+       String therequestUri = new String(context.getProperty("requestUri").toString());
+       testnode.info therequestUri;
+       if(extRequest.length()> 0){
+        testnode.info("---------Request-------------");    
+	  testnode.info(MarkupHelper.createCodeBlock(extRequest, CodeLanguage.JSON));
+       }
+	  testnode.info("---------Response-------------");  
+	  testnode.info(MarkupHelper.createCodeBlock(extResponse, CodeLanguage.JSON));
+    }
+
+     
+   }
+ }
+catch(exc)
+{
+   log.error("Exception happened: " + exc.toString());
+}</script></con:config></con:testStep><con:properties/></con:testCase><con:properties/></con:testSuite><con:properties/><con:wssContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/></con:soapui-project>

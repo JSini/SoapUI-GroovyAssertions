@@ -1243,30 +1243,30 @@ log.info ("Env Property name is " +envProp)
 
 </script></con:config></con:testStep><con:testStep type="groovy" name="GetProperties" id="69a26045-d4d4-4f49-bac9-07cc1b802e2b"><con:settings/><con:config><script>////*********************Get Properties *******************//
 //
-////Project
-//def projectCC = testRunner.testCase.testSuite.project.getPropertyValue("CountryCode")
-//log.info projectCC
-//
-////TestSuite
-//def suiteCC = testRunner.testCase.testSuite.getPropertyValue("CountryCode")
-//log.info suiteCC
-//
-////TestCase
-//def caseCC = testRunner.testCase.getPropertyValue("CountryCode")
-//log.info caseCC
-//
-////TestStep
-//def StepCC = testRunner.testCase.getTestStepByName("Props").getPropertyValue("CountryCode")
-//log.info StepCC
-//
-////Global
-//def globalProp = com.eviware.soapui.SoapUI.globalProperties.getPropertyValue("CountryCode")
-//log.info globalProp
-//
-//
-////add property
-//testRunner.testCase.testSuite.project.addProperty("DOB")
-//testRunner.testCase.testSuite.project.removeProperty("DOB")
+//Project
+def projectCC = testRunner.testCase.testSuite.project.getPropertyValue("CountryCode")
+log.info projectCC
+
+//TestSuite
+def suiteCC = testRunner.testCase.testSuite.getPropertyValue("CountryCode")
+log.info suiteCC
+
+//TestCase
+def caseCC = testRunner.testCase.getPropertyValue("CountryCode")
+log.info caseCC
+
+//TestStep
+def StepCC = testRunner.testCase.getTestStepByName("Props").getPropertyValue("CountryCode")
+log.info StepCC
+
+//Global
+def globalProp = com.eviware.soapui.SoapUI.globalProperties.getPropertyValue("CountryCode")
+log.info globalProp
+
+
+//add property
+testRunner.testCase.testSuite.project.addProperty("DOB")
+testRunner.testCase.testSuite.project.removeProperty("DOB")
 
  // Loop through properties
 
